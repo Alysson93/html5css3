@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site criado com finalidades educacionais para ensinar HTML5, CSS3 e JavaScript, três tecnologias fundamentais da WEB.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Alysson Pereira Assunção">
     <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -19,27 +20,28 @@
 <body>
 
     <header>
-        <div class="logo w50 left">logo</div>
-        <nav class="menu-desktop w50 left">
+        <div class="logo w50 left"><img src="img/favicon.png" /></div>
+        <nav class="menu-desktop w50 right">
             <ul>
-                <li><a href="">HTML</a></li>
-                <li><a href="">CSS</a></li>
-                <li><a href="">JavaScript</a></li>
-                <li><a href="">Links Úteis</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#js">JavaScript</a></li>
+                <li><a href="#linksUteis">Links Úteis</a></li>
             </ul>
         </nav>
         <div class="clear"></div>
     </header>
 
     <main class="bloco">
-        <h1>Aprenda HTML5, CSS3 e JavaScript</h1>
-        <h3>Escrever com semântica!</h3>
-        <h3>Aplicar estilos modernos!</h3>
-        <h3>Obter uma melhor interação!</h3>
+        <h1>Aprenda <span class="laranja">HTML5</span>, <span class="azul">CSS3</span> e <span class="amarelo">JavaScript</span></h1>
+        <h3>Escrever com <span class="laranja">semântica</span>!</h3>
+        <h3>Aplicar <span class="azul">estilos</span> modernos!</h3>
+        <h3>Obter uma melhor <span class="amarelo">interação</span>!</h3>
     </main>
 
-    <section class="bloco">
-        <div class="w25 left">Imagem</div>
+    <section class="bloco" id="html">
+    <div class="center">
+        <div class="w25 left"><img src="img/HTML5.png" alt=""></div>
         <div class="w75 left">
             <h2>HTML5</h2>
             <h3>A HTML é a linguagem principal da web</h3>
@@ -51,10 +53,12 @@
             <a>Saiba mais</a>
         </div>
         <div class="clear"></div>
+    </div>
     </section>
 
-    <section class="bloco">
-        <div class="w25 right">Imagem</div>
+    <section class="bloco" id="css">
+    <div class="center">
+        <div class="w25 right"><img src="img/CSS3.png" alt=""></div>
         <div class="w75 right">
             <h2>CSS3</h2>
             <h3>O CSS complementa o HTML</h3>
@@ -62,13 +66,15 @@
                 cascata. É usada para personalização visual de um site. Ou seja, elas servem para
                 otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o
                 usuário.</p>
-            <a>Saiba mais></a>
+            <a>Saiba mais</a>
         </div>
         <div class="clear"></div>
+    </div>
     </section>
 
-    <section class="bloco">
-        <div class="w25 left">Imagem</div>
+    <section class="bloco" id="js">
+    <div class="center">
+        <div class="w25 left"><img src="img/JS.png" alt=""></div>
         <div class="w75 left">
             <h2>JavaScript</h2>
             <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
@@ -78,11 +84,27 @@
             <a>Saiba mais</a>
         </div>
         <div class="clear"></div>
+    </div>
+    </section>
+
+    <section class="bloco" id="linksUteis">
+    <div class="center">
+        <h1>Links Úteis</h1>
+        <div class="w33 left">
+            <h2>Planejamento</h2>
+        </div>
+        <div class="w33 left">
+            <h2>Programação</h2>
+        </div>
+        <div class="w33 left">
+            <h2>Ajuda</h2>
+        </div>
+    </div>
     </section>
 
     <footer>
         <span>© 2022 - Jobson Tenório do Nascimento</span>
     </footer>
-    
+
 </body>
 </html>
