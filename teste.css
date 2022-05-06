@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #9e2731;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: #d41314;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #f8ca2e;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background-color: #7adc54;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: #027f37;
+  }
+}
+/*# sourceMappingURL=teste.css.map */

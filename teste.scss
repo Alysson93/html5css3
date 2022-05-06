@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//smartphones
+body {
+    background-color:#9e2731;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+@media (min-width: 576px) {
+    body {
+        background-color:#d41314;
+    }
+
+    main {
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        background-color:#f8ca2e;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        background-color:#7adc54;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color:#027f37;
+    }
+}
