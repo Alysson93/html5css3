@@ -19,30 +19,29 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo w50 left"><img src="img/favicon.png" /></div>
-        <nav class="menu-desktop w50 right">
-            <ul>
+    <header class="flex-linha"  id="cabeca">
+        <img src="img/favicon.png" />
+        <nav>
+            <ul class="flex-linha">
                 <li><a href="#html">HTML</a></li>
                 <li><a href="#css">CSS</a></li>
                 <li><a href="#js">JavaScript</a></li>
                 <li><a href="#linksUteis">Links Úteis</a></li>
             </ul>
         </nav>
-        <div class="clear"></div>
     </header>
 
     <main class="bloco">
-        <h1>Aprenda <span class="laranja">HTML5</span>, <span class="azul">CSS3</span> e <span class="amarelo">JavaScript</span></h1>
-        <h3>Escrever com <span class="laranja">semântica</span>!</h3>
-        <h3>Aplicar <span class="azul">estilos</span> modernos!</h3>
-        <h3>Obter uma melhor <span class="amarelo">interação</span>!</h3>
+        <h1>Aprenda <span class="html-c">HTML5</span>, <span class="css-c">CSS3</span> e <span class="js-c">JavaScript</span></h1>
+        <h2>Escrever com <span class="html-c">semântica</span>!</h2>
+        <h2>Aplicar <span class="css-c">estilos</span> modernos!</h2>
+        <h2>Obter uma melhor <span class="js-c">interação</span>!</h2>
     </main>
 
-    <section class="bloco" id="html">
-    <div class="center">
-        <div class="w25 left"><img src="img/HTML5.png" alt=""></div>
-        <div class="w75 left">
+    <section class="bloco html-bg" id="html">
+    <div class="center flex-linha">
+        <img src="img/HTML5.png" alt="">
+        <div class="conteudo flex-coluna">
             <h2>HTML5</h2>
             <h3>A HTML é a linguagem principal da web</h3>
             <p>A HTML5 modifica a forma de como escrevemos código e organizamos a
@@ -50,60 +49,93 @@
                 interatividade sem a necessidade de instalação de plugins e perda de performance. É
                 a criação de código interoperável, pronto para futuros dispositivos e que facilita a
                 reutilização da informação de diversas formas.</p>
-            <a>Saiba mais</a>
-        </div>
-        <div class="clear"></div>
+            <a href="#linksUteis">Saiba mais</a>
+            </div>
     </div>
     </section>
 
-    <section class="bloco" id="css">
-    <div class="center">
-        <div class="w25 right"><img src="img/CSS3.png" alt=""></div>
-        <div class="w75 right">
-            <h2>CSS3</h2>
-            <h3>O CSS complementa o HTML</h3>
-            <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em
-                cascata. É usada para personalização visual de um site. Ou seja, elas servem para
-                otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o
-                usuário.</p>
-            <a>Saiba mais</a>
+    <section class="bloco css-bg" id="css">
+        <div class="center flex-linha">
+            <img src="img/CSS3.png" alt="">
+            <div class="conteudo flex-coluna">
+                <h2>CSS3</h2>
+                <h3>O CSS compelementa o HTML</h3>
+                <p>CSS é uma linguagem de estilo, também conhecida como folhas de estilo em
+                    cascata. É usada para personalização visual de um site. Ou seja, elas servem para
+                    otimizar o conteúdo das páginas e permitir uma apresentação mais amigável para o
+                    usuário.</p>
+                <a href="#linksUteis">Saiba mais</a>
+                </div>
         </div>
-        <div class="clear"></div>
-    </div>
+    </section>
+ 
+    <section class="bloco js-bg" id="js">
+        <div class="center flex-linha">
+            <img src="img/JS.png" alt="">
+            <div class="conteudo flex-coluna">
+                <h2>JavaScript</h2>
+                <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
+                <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e
+                    dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos
+                    (como por exemplo a programação funcional).</p>
+                <a href="#linksUteis">Saiba mais</a>
+                </div>
+        </div>
     </section>
 
-    <section class="bloco" id="js">
-    <div class="center">
-        <div class="w25 left"><img src="img/JS.png" alt=""></div>
-        <div class="w75 left">
-            <h2>JavaScript</h2>
-            <h3>Com a HTML e o CSS, o JavaScript é uma das três principais tecnologias da web</h3>
-            <p>O JavaScript é uma linguagem baseada em protótipos, multi-paradigma e
-                dinâmica, suportando estilos de orientação a objetos, imperativos e declarativos
-                (como por exemplo a programação funcional).</p>
-            <a>Saiba mais</a>
-        </div>
-        <div class="clear"></div>
-    </div>
-    </section>
 
     <section class="bloco" id="linksUteis">
-    <div class="center">
+    <div class="center flex-coluna">
         <h1>Links Úteis</h1>
-        <div class="w33 left">
-            <h2>Planejamento</h2>
-        </div>
-        <div class="w33 left">
-            <h2>Programação</h2>
-        </div>
-        <div class="w33 left">
-            <h2>Ajuda</h2>
+        <div class="flex-linha" style="align-items:flex-start;">
+            <div class="links">
+                <h3>Planejamento</h3>
+                <ul>
+                    <li class="flex-linha item">
+                        <img src="img/Figma_icon.png" />
+                        <a href="">Figma</a>
+                    </li>
+                    <li class="flex-linha item">
+                        <img src="img/Google_icon.png" />
+                        <a href="">Google Fonts</a>
+                    </li>
+                    <li class="flex-linha item">
+                        <img src="img/Unicode_icon.png" />
+                        <a href="">unicode.org</a>
+                    </li>
+                    <li class="flex-linha item">
+                        <img src="img/Google_icon.png" />
+                        <a href="">Favicon Generator</a>
+                    </li>
+                    <li class="flex-linha item">
+                        <img src="img/Bootstrap_icon.png" />
+                        <a href="">Bootstrap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="links">
+                <h3>Programação</h3>
+            </div>
+            <div class="links">
+                <h3>Ajuda</h3>
+            </div>
         </div>
     </div>
     </section>
 
     <footer>
+    <div class="flex-linha">
         <span>© 2022 - Jobson Tenório do Nascimento</span>
+        <div id="contato">
+            <ul class="flex-linha">
+                <li><a href=""><img src="img/WhatsApp_icon.png" /></a></li>
+                <li><a href=""><img src="img/Gmail_icon.png" /></a></li>
+                <li><a href=""><img src="img/YouTube_icon.png" /></a></li>
+                <li><a href=""><img src="img/Facebook_icon.png" /></a></li>
+                <li><a href=""><img src="img/Instagram_icon.png" /></a></li>
+            </ul>
+        </div>
+    </div>
     </footer>
 
 </body>
