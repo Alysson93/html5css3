@@ -5,19 +5,46 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.center {
-    width: 1200px;
-    margin: 0 auto;
+/************** dimensões ************/
+
+.left {
+    float: left;
 }
 
-.bloco {
-    padding: 80px 0;
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w33 {
+    width: 33%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.center {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .flex-linha {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -25,7 +52,7 @@
 .flex-coluna {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -45,15 +72,15 @@
 }
 
 .html-bg {
-    background-color: #F16529;
+    background-image: linear-gradient(rgba(228, 77, 38, 0.8), rgba(241, 101, 41, 0.8)); 
 }
 
 .css-bg {
-    background-color: #2965F1;
+    background-image: linear-gradient(rgba(38, 77, 228, 0.8) , rgba(41, 101, 241, 0.8));
 }
 
 .js-bg {
-    background-color: #F1BF26;
+    background-image: linear-gradient(rgba(229, 162, 40, 0.8), rgba(241, 191, 38, 0.8));
 }
 
 /************** header ************/
@@ -71,6 +98,10 @@ header {
 header img {
     width: 200px;
     height: 200px;
+}
+
+header #icone {
+    display: none;
 }
 
 header ul {
@@ -91,8 +122,11 @@ header a:hover {
     text-decoration: underline;
 }
 
-
 /************** main ************/
+
+.bloco {
+    padding: 80px 0;
+}
 
 main {
     text-align: center;
@@ -112,7 +146,12 @@ main h2 {
     font-size: 40px;
 }
 
-/************** classe conteudo ************/
+.bloco .imagem {
+    width: 100%;
+	max-width: 400px;
+	max-height: 400px;
+    margin: 0 auto;
+}
 
 .conteudo h2 {
     text-align: center;
@@ -188,4 +227,57 @@ footer ul {
 
 footer li {
     padding: 0 10px;
+}
+
+/************** responsivo ************/
+
+@media screen and (max-width: 900px) {
+
+    .w25 {
+        width: 40%;
+    }
+
+    .w75 {
+        width: 60%;
+    }
+
+    #linksUteis * {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    #linksUteis h3 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+	.w33, .w50, .w25, .w75 {
+		width: 100%;
+	}
+
+    header ul.flex-linha {
+        display: none;
+    }
+
+    header #icone {
+        display: block;
+        position: fixed;
+        color: #fff;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+        cursor: pointer;
+        box-shadow: inset 5em 1em 1px #222;  
+}
+
+    .conteudo {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .item {
+        justify-content: center;
+    }
 }
